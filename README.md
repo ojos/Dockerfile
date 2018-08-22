@@ -1,2 +1,2 @@
-# Docker
-オレオレDocker関連ファイル
+# Dockerfile
+オレオレDockerfile
