@@ -22,5 +22,5 @@ RUN curl -O https://releases.hashicorp.com/terraform/0.11.8/terraform_0.11.8_lin
 RUN apk del .build-deps
 
 ADD . /var/app/
-
 WORKDIR /var/app/orchestration/terraform
+ENTRYPOINT ["/usr/local/bin/terraform"]

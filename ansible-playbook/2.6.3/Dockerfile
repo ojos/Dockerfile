@@ -26,5 +26,5 @@ RUN pip install --upgrade pip && \
 RUN apk del .build-deps
 
 ADD . /var/app/
-
 WORKDIR /var/app/orchestration/ansible
+ENTRYPOINT ["/usr/local/bin/ansible-playbook"]

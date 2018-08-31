@@ -1,7 +1,11 @@
 # Dockerfile
-FROM ojos/python-app:3.6-alpine
+FROM python:3-alpine
 
-# Move application directory
+# Do not stdout/stderr buffer
+ENV PYTHONUNBUFFERED 1
+
+# Create application directory
+RUN mkdir -p /var/app
 WORKDIR /var/app
 
 # Install dependent packages
