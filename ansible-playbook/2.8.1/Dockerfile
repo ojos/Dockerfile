@@ -5,7 +5,7 @@ FROM python:alpine
 ENV PYTHONUNBUFFERED 1
 
 # Create application directory
-RUN mkdir -p /var/app/orchestration/ansible
+RUN mkdir -p /var/app
 WORKDIR /var/app
 
 # Install dependent packages
@@ -26,5 +26,4 @@ RUN pip install --upgrade pip && \
 RUN apk del .build-deps
 
 ADD . /var/app/
-WORKDIR /var/app/orchestration/ansible
 ENTRYPOINT ["/usr/local/bin/ansible-playbook"]

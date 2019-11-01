@@ -18,7 +18,8 @@ RUN { \
     echo 'innodb_large_prefix'; \
     echo 'innodb_file_per_table'; \
     echo 'innodb_file_format=Barracuda'; \
+} > /etc/mysql/mysql.conf.d/charset.cnf
+RUN { \
     echo '[client]'; \
     echo 'default-character-set=utf8mb4'; \
-} > /etc/mysql/mysql.conf.d/charset.cnf
-
+} > /etc/mysql/conf.d/charset.cnf

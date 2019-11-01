@@ -1,0 +1,14 @@
+boto3==1.9.180
+pytz==2019.1
+requests==2.22.0
+git+https://github.com/ojos/python-library.git
+meinheld==1.0.1
+gunicorn==19.9.0
+Django==2.2.2
+mysqlclient==1.3.13
+redis==3.2.1
+django-redis==4.10.0
+django-extensions==2.1.9
+djangorestframework==3.9.4
+Werkzeug==0.15.4
+
